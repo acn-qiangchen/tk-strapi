@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sample_general_footers",
+  "info": {
+    "displayName": "GeneralFooter",
+    "icon": "quote"
+  },
+  "options": {},
+  "attributes": {
+    "footer": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_sample_sample_components",
+  "info": {
+    "displayName": "sample-component"
+  },
+  "options": {},
+  "attributes": {
+    "SampleDate": {
+      "type": "date"
+    }
+  }
+}
