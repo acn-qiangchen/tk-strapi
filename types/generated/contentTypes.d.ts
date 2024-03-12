@@ -368,15 +368,21 @@ export interface ApiAcAssetAcAsset extends Schema.CollectionType {
     singularName: 'ac-asset';
     pluralName: 'ac-assets';
     displayName: 'ACAsset';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     Name: Attribute.String;
-    Description: Attribute.Text;
+    ShortDescription: Attribute.Text;
     ReleaseNote: Attribute.RichText;
     AssetFile: Attribute.Media;
+    Contact: Attribute.Email & Attribute.DefaultTo<'your@email.address'>;
+    FAQ: Attribute.RichText;
+    RoadMap: Attribute.RichText;
+    AuthRequired: Attribute.Boolean;
+    Category: Attribute.Enumeration<['acn-internal', 'external']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

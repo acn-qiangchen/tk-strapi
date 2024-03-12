@@ -9,8 +9,9 @@
                 secretAccessKey: env('AWS_ACCESS_SECRET'),
                 region: env('AWS_REGION'),
                 params: {
-                  ACL: env('AWS_ACL', 'public-read'),
-                  signedUrlExpires: env('AWS_SIGNED_URL_EXPIRES', 15 * 60),
+                  //ACL: env('AWS_ACL', 'public-read'),
+                  ACL: env('AWS_ACL', 'private'),
+                  signedUrlExpires: env('AWS_SIGNED_URL_EXPIRES', 60 * 60 * 24),
                   Bucket: env('AWS_BUCKET'),
                 },
               },

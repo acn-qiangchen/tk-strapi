@@ -4,7 +4,8 @@
   "info": {
     "singularName": "ac-asset",
     "pluralName": "ac-assets",
-    "displayName": "ACAsset"
+    "displayName": "ACAsset",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,21 +15,42 @@
     "Name": {
       "type": "string"
     },
-    "Description": {
+    "ShortDescription": {
       "type": "text"
     },
     "ReleaseNote": {
       "type": "richtext"
     },
     "AssetFile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "Contact": {
+      "type": "email",
+      "default": "your@email.address"
+    },
+    "FAQ": {
+      "type": "richtext"
+    },
+    "RoadMap": {
+      "type": "richtext"
+    },
+    "AuthRequired": {
+      "type": "boolean"
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "acn-internal",
+        "external"
+      ]
     }
   }
 }
